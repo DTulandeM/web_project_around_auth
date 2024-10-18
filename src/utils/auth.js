@@ -19,7 +19,7 @@ export async function Singup(email, password) {
     console.log(data);
     return data;
   } catch (error) {
-    console.log("El error es " + error);
+    console.log("Error al intentar conectarse con el servidor " + error);
   }
 }
 
@@ -43,7 +43,7 @@ export async function Authorization(email, password) {
     localStorage.setItem("jwt", data.token);
     return data;
   } catch (error) {
-    console.log("El error es " + error);
+    console.log("Error al intentar conectarse con el servidor " + error);
   }
 }
 
@@ -65,6 +65,6 @@ export async function CheckToken(token) {
     }
     return data;
   } catch (error) {
-    console.log("El error es " + error);
+    console.log("Error al intentar conectarse con el servidor " + error);
   }
 }
