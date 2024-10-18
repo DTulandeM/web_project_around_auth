@@ -20,8 +20,8 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 22px;
   color: #ffffff;
   text-align: center;
   height: 50px;
@@ -55,13 +55,18 @@
 
 @media screen and (max-width: 320px) {
   .navBar {
+    flex-direction: column-reverse;
+    align-self: center;
     max-width: 100px;
     width: 100%;
-    margin-left: 30px;
+    margin-left: 0px;
   }
 
   .navBar__text {
     font-size: 14px;
     line-height: 17px;
+  }
+  .navBar__button {
+    width: 150px;
   }
 }

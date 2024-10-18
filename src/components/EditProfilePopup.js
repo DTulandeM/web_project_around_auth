@@ -40,7 +40,7 @@ function EditProfilePopup({
       <input
         type="text"
         name="name"
-        value={nameInp}
+        value={nameInp || ""}
         onChange={(e) => setNameInp(e.target.value)}
         className="form__input"
         id="profile-name"
@@ -51,7 +51,7 @@ function EditProfilePopup({
       <input
         type="text"
         name="about"
-        value={description}
+        value={description || ""}
         onChange={(e) => setDescription(e.target.value)}
         className="form__input"
         id="profile-aboutme"

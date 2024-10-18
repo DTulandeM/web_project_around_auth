@@ -95,3 +95,14 @@
 .home__link:hover {
   opacity: 0.6;
 }
+
+@media screen and (max-width: 320px) {
+  .home__fieldset {
+    max-width: 260px;
+  }
+
+  .home__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

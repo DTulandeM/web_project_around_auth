@@ -20,6 +20,7 @@
 
 @media screen and (max-width: 320px) {
   .header {
+    flex-direction: column-reverse;
     margin: 28px auto 0;
     max-width: 320px;
   }

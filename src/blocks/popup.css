@@ -191,7 +191,7 @@
 .popup-notification__button-close {
   position: relative;
   left: 40px;
-  bottom: 30px;
+  bottom: 40px;
   background-color: black;
   background-image: url("../images/close-icon.svg");
   background-repeat: no-repeat;
@@ -259,5 +259,22 @@
   .popup-delete__title {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .popup-notification {
+    max-width: 280px;
+    margin: 0;
+  }
+  .popup-notification__button-close {
+    left: 0px;
+    align-self: center;
+    max-width: 30px;
+    height: 30px;
+  }
+
+  .popup-notification__text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
   }
 }
