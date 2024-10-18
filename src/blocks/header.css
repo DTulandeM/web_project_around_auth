@@ -5,7 +5,8 @@
   max-width: 880px;
   width: 100%;
   border-bottom: 1px solid rgba(54, 54, 54, 0.7); /* Se hace borde solido con una opacidad de 0.7 según el dato del brief*/
-  justify-content: space-between;
+  justify-content: flex-end;
+  row-gap: 10px;
 }
 
 .header__logo {

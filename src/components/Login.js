@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-function Signup({ register }) {
+function Singin({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
-    register(email, password);
+    onLogin(email, password);
   }
+
   return (
     <form className="home" noValidate>
-      <h1 className="home__title">Regístrate</h1>
+      <h1 className="home__title">Inicia sesión</h1>
       <fieldset className="home__fieldset">
         <input
           type="text"
@@ -34,21 +35,22 @@ function Signup({ register }) {
           required
         />
         <button
-          name="btnRegister"
+          name="btnLogin"
           type="submit"
           className="home__button"
           onClick={handleSubmit}
         >
-          Regístrate
+          Inicia sesión
         </button>
         <span className="home__foot">
-          ¿Ya eres miembro?{" "}
-          <Link className="home__link" to="/singin">
-            Inicia sesión aquí
+          ¿Aún no eres miembro?{" "}
+          <Link className="home__link" to="/singup">
+            Regístrate aquí
           </Link>
         </span>
       </fieldset>
     </form>
   );
 }
-export default Signup;
+
+export default Singin;

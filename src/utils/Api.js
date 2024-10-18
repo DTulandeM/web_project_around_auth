@@ -141,4 +141,12 @@ const api = new Api({
   },
 });
 
+// const api = new Api({
+//   baseUrl: "https://tripleten.desarrollointerno.com",
+//   headers: {
+//     authorization: `Bearer ${localStorage.getItem("jwt")}`,
+//     "Content-Type": "application/json; charset=UTF-8",
+//   },
+// });
+
 export default api;
